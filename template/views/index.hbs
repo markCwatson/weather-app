@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Home</title>
+    <link rel="icon" href="./img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <div class="main-content">
+      {{>header}}
+
+      <p>Enter the location below...</p>
+
+      <form>
+        <input placeholder="Halifax NS Canada">
+        <button class="button-10">Search</button>
+      </form>
+
+      <p id="msg1"></p>
+      <p id="msg2"></p>
+    </div>
+    
+    {{>footer}}
+
+    <script src="./js/app.js"></script> 
+  </body>
+   
+</html>
