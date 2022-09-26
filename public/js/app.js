@@ -10,7 +10,7 @@ search_form.addEventListener('submit', (event) => {
     msg2.textContent = ''
 
     // Fetch API running in browser
-    fetch('http://localhost:3000/weather?address=' + input.value).then((res) => {
+    fetch('/weather?address=' + input.value).then((res) => {
         res.json().then((data) => {
             if (data.error) {
                 msg1.textContent = data.error   

@@ -16,6 +16,9 @@ const partials_path = path.join(__dirname, '../template/partials')
 
 const app = express()
 
+// For hroku environment variable for the port number
+const port = process.env.PORT || 3000
+
 // Setup handlebars and views
 app.set('view engine', 'hbs')
 app.set('views', views_path)
@@ -84,6 +87,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('server started')
 })
